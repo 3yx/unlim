@@ -1,5 +1,5 @@
 .first {
-	background: url('../img/background.jpg');
+	background-color: #303f9f;
 	color: white;
 	h1 {
 		text-align: center;
@@ -48,16 +48,22 @@
 	}
 }
 
+.human {
+	position: absolute;
+	top: 40vh!important;
+	left: 25vw!important;
+}
+
 .satellite, .earth {
 	z-index: 0;
 	position: absolute;
-	top: 200px;
-	left: 10vh;
+	top: 200px!important;
+	left: 10vh!important;
 }
 
 .earth {
-	top: 300px;
-	left: 80vw;
+	top: 300px!important;
+	left: 80vw!important;
 }
 
 .space {
@@ -70,20 +76,28 @@
 	}
 }
 
+.stars {
+	width: 100%;
+}
+
+#scene {
+	height: 0!important;
+}
+
 @media (max-width: 766px) {
 	.first {
 		text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
 	}
 
-	.earth {
-		display: none;
+	.earth, .human, .stars {
+		display: none!important;
 	}
 
 	.media {
 		text-align: center;
 
 		img {
-			display: none;
+			display: none!important;
 		}
 
 		p {

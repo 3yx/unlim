@@ -15,8 +15,13 @@
   </head>
   <body>
     <section class="first">
-      <img class="satellite" src="img/satellite.png" alt="satellite">
-      <img class="earth"src="img/planet.png" alt="planet">
+      <div data-relative-input="true" id="scene">
+        <img data-depth="0.1" class="stars" src="img/stars.png" alt="stars.png">
+        <img data-depth="0.2" class="satellite" src="img/satellite.png" alt="satellite">
+        <img data-depth="0.25" class="earth"src="img/planet.png" alt="planet">
+        <img data-depth="0.5" class="human" src="img/human.png" alt="human">  
+      </div>
+     
         <div class="container">
           <div class="row auto justify-content-center space">
             <div>
@@ -27,9 +32,9 @@
               <p>
                 в любых мероприятиях со скидкой до 92%
               </p>
-            </div>           
-            <div class="col-xs-12 col-md-9 media">
-              <img class="mr-5" src="img/human.png" alt="human">
+            </div>
+            <div class="col-xs-12 col-md-9 media">                             
+              <img class="mr-5" src="img/human_empty.png" alt="human">
               <div class="ml-5 mt-5 media-body">
                 <h2>
                   Для тех, кто не ищет <br>
@@ -56,5 +61,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
