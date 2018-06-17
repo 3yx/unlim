@@ -1,7 +1,43 @@
 .first {
-  background: url("../img/background.jpg"); }
+  background: url("../img/background.jpg");
+  color: white; }
+  .first h1 {
+    text-align: center;
+    font-family: "GothamProBold"; }
+  .first p {
+    font-size: 1.25em;
+    text-align: center;
+    font-family: "GothamProLight"; }
+
+.media {
+  padding-top: 6vh; }
+  .media h2 {
+    font-family: "GothamProMedium";
+    color: #b6f1ff; }
+  .media p {
+    text-align: left; }
+  .media button {
+    font-family: "GothamProBlack";
+    color: white;
+    background-color: #ff1744;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    -webkit-box-shadow: 0px 4px 0px -1px #d50000;
+    -moz-box-shadow: 0px 4px 0px -1px #d50000;
+    box-shadow: 0px 4px 0px -1px #d50000;
+    letter-spacing: 0.04em; }
+    .media button:hover {
+      cursor: pointer; }
+    .media button:active {
+      margin-top: 4px;
+      box-shadow: none; }
+    .media button:focus {
+      outline: none; }
 
 .satellite, .earth {
+  z-index: 0;
   position: absolute;
   top: 200px;
   left: 10vh; }
@@ -11,7 +47,27 @@
   left: 80vw; }
 
 .space {
+  padding-top: 10vh;
   background: url("../img/earth.png") no-repeat;
   background-position: bottom; }
+  .space div {
+    z-index: 1; }
+
+@media (max-width: 766px) {
+  .first {
+    text-shadow: 0px 0px 2px black; }
+
+  .earth {
+    display: none; }
+
+  .media {
+    text-align: center; }
+    .media img {
+      display: none; }
+    .media p {
+      text-align: center; }
+
+  .media-body {
+    margin: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

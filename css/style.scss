@@ -1,8 +1,55 @@
 .first {
 	background: url('../img/background.jpg');
+	color: white;
+	h1 {
+		text-align: center;
+		font-family: "GothamProBold";
+	}
+	p {
+		font-size: 1.25em;
+		text-align: center;
+		font-family: "GothamProLight";
+	}
+
+}
+
+.media {
+	padding-top: 6vh;
+
+	h2 {
+		font-family: "GothamProMedium";
+		color: #b6f1ff;
+	}
+	p {
+		text-align: left;
+	}
+	button {		
+		font-family: "GothamProBlack";
+		color: white;
+		background-color: #ff1744;
+		border: none;
+		border-radius: 5px;
+		text-transform: uppercase;
+		padding: 15px 20px;
+		-webkit-box-shadow: 0px 4px 0px -1px rgba(213,0,0,1);
+		-moz-box-shadow: 0px 4px 0px -1px rgba(213,0,0,1);
+		box-shadow: 0px 4px 0px -1px rgba(213,0,0,1);
+		letter-spacing: 0.04em;
+		&:hover{
+			cursor:pointer;
+		}
+		&:active {
+			margin-top: 4px; 			
+			box-shadow: none;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
 }
 
 .satellite, .earth {
+	z-index: 0;
 	position: absolute;
 	top: 200px;
 	left: 10vh;
@@ -14,6 +61,37 @@
 }
 
 .space {
+	padding-top: 10vh;
 	background: url('../img/earth.png')no-repeat;
 	background-position: bottom;
+	div {
+
+		z-index: 1;
+	}
+}
+
+@media (max-width: 766px) {
+	.first {
+		text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+	}
+
+	.earth {
+		display: none;
+	}
+
+	.media {
+		text-align: center;
+
+		img {
+			display: none;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+
+	.media-body {
+		margin: 0!important;
+	}
 }
