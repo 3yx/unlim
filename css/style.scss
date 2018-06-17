@@ -1,0 +1,19 @@
+.first {
+	background: url('../img/background.jpg');
+}
+
+.satellite, .earth {
+	position: absolute;
+	top: 200px;
+	left: 10vh;
+}
+
+.earth {
+	top: 300px;
+	left: 80vw;
+}
+
+.space {
+	background: url('../img/earth.png')no-repeat;
+	background-position: bottom;
+}
